@@ -34,14 +34,14 @@ export PATH="$PATH:$(pwd)/flutter/bin"  # 将 Flutter SDK 加入 PATH
 echo "🩺 [3/4] 检查 Flutter 环境..."
 flutter doctor
 
-echo "📚 [3.5/4] Flutter 清空..."
-flutter clean
+#echo "📚 [3.5/4] Flutter 清空..."
+#flutter clean
 
 # 获取 Flutter 依赖
 echo "📚 [4/4] 获取 Flutter 依赖..."
 flutter pub get
 
 # 构建 iOS Release（不签名）
-flutter build ios --release --no-codesign
+flutter build ios --no-codesign
 
 echo "✅ Flutter SDK 下载与构建成功，交给 Xcode Cloud 继续 Archive & 签名"

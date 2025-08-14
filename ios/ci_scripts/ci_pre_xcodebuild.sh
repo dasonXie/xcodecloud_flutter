@@ -34,8 +34,8 @@ export PATH="$PATH:$(pwd)/flutter/bin"  # 将 Flutter SDK 加入 PATH
 echo "🩺 [3/4] 检查 Flutter 环境..."
 flutter doctor
 
-#echo "📚 [3.5/4] Flutter 清空..."
-#flutter clean
+echo "📚 获取 Pod 依赖..."
+pod install
 
 # 获取 Flutter 依赖
 echo "📚 [4/4] 获取 Flutter 依赖..."

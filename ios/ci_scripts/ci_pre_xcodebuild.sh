@@ -59,17 +59,9 @@ flutter pub get
 
 #echo "📚 获取 Pod 依赖..."
 #pod install
-#
-### 构建 iOS Release（不签名）
-##flutter build ios --no-codesign
-##
-##echo "✅ Flutter SDK 下载与构建成功，交给 Xcode Cloud 继续 Archive & 签名"
-#
-##ls Flutter/Generated.xcconfig  # 若存在，说明本地生成正常
+
 echo "📚 Flutter 构建..."
 # 构建一次 iOS 项目（触发 Generated.xcconfig 生成）
 flutter build ios --config-only --no-codesign # 仅生成配置，不完整构建
 
-## 检查文件是否存在
-#echo "📚 检查文件是否存在"
-#ls Flutter/Generated.xcconfig  # 若存在，说明本地生成正常
+echo "✅ Flutter SDK 下载与构建成功，交给 Xcode Cloud 继续 Archive & 签名"

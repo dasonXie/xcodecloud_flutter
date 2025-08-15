@@ -13,22 +13,19 @@ echo "当前工作目录: $(pwd)"
 # 发现是在ci_scripts目录下，返回上级目录在执行
 cd ..
 
-# 检查 ios 目录是否存在
-if [ ! -d "ios" ]; then
-  echo "Error: ios 目录不存在！"
-  exit 1
-fi
+echo "当前工作目录: $(pwd)"
+
 
 # 检查 ios/Flutter 目录是否存在，不存在则创建并赋予权限
-if [ ! -d "ios/Flutter" ]; then
-  echo "创建 ios/Flutter 目录..."
-  mkdir -p ios/Flutter
+if [ ! -d "Flutter" ]; then
+  echo "创建 Flutter 目录..."
+  mkdir -p Flutter
   # 赋予读写权限（关键）
   chmod 777 ios/Flutter
 fi
 
 # 打印 ios/Flutter 目录的权限
-echo "ios/Flutter 目录权限: $(ls -ld ios/Flutter)"
+echo "Flutter 目录权限: $(ls -ld Flutter)"
 #
 ## 目标 Flutter 版本
 #FLUTTER_VERSION="3.22.2"  # 你要的版本

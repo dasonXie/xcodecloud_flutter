@@ -10,7 +10,7 @@ set -e
 
 echo "当前工作目录: $(pwd)"
 
-# 发现是在ci_scripts目录下，返回上级目录在执行
+# 发现是在ci_scripts目录下，返回上级目录在执行，这个太重要了，没有回到ios目录下，会找不到Generated.xcconfig
 cd ..
 
 echo "当前工作目录: $(pwd)"
@@ -57,8 +57,8 @@ flutter doctor
 echo "📚 [4/4] 获取 Flutter 依赖..."
 flutter pub get
 
-echo "📚 获取 Pod 依赖..."
-pod install
+#echo "📚 获取 Pod 依赖..."
+#pod install
 #
 ### 构建 iOS Release（不签名）
 ##flutter build ios --no-codesign

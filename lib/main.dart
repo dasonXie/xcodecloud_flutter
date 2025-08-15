@@ -1,4 +1,4 @@
-// import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            // CachedNetworkImage(imageUrl: "https://p0.meituan.net/phoenix/d00b868b753d540e7ff7707b177180e0130135.jpg%40watermark%3D0",)
+            CachedNetworkImage(imageUrl: "https://p0.meituan.net/phoenix/d00b868b753d540e7ff7707b177180e0130135.jpg%40watermark%3D0",)
           ],
         ),
       ),

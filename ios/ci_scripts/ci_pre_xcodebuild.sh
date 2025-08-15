@@ -57,8 +57,8 @@ flutter doctor
 echo "📚 [4/4] 获取 Flutter 依赖..."
 flutter pub get
 
-#echo "📚 获取 Pod 依赖..."
-#pod install
+echo "📚 获取 Pod 依赖..."
+pod install
 
 echo "📚 Flutter 构建..."
 # 构建一次 iOS 项目（触发 Generated.xcconfig 生成）

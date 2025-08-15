@@ -10,6 +10,9 @@ set -e
 
 echo "当前工作目录: $(pwd)"
 
+# 发现是在ci_scripts目录下，返回上级目录在执行
+cd ..
+
 # 检查 ios 目录是否存在
 if [ ! -d "ios" ]; then
   echo "Error: ios 目录不存在！"

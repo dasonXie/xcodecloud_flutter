@@ -50,6 +50,6 @@ pod install
 
 echo "📚 Flutter 构建..."
 # 构建一次 iOS 项目（触发 Generated.xcconfig 生成）
-flutter build ios --config-only --no-codesign # 仅生成配置，不完整构建
+flutter build ios --no-codesign # 仅生成配置，不完整构建
 
 echo "✅ Flutter SDK 下载与构建成功，交给 Xcode Cloud 继续 Archive & 签名"
